@@ -230,11 +230,7 @@ h1 {
 
 h1.nick2 {
     padding: 10px;
-<<<<<<< HEAD
     max-width: 480px;
-=======
-    max-width: 450px;
->>>>>>> a5a05edcf9ade01eb283bb39db4f91e0e7f26ab3
     font-weight: 600;
     font-size: 50px;
     display: inline-block;
