@@ -52,7 +52,7 @@ body {
   
 /* CAbEÇALHO */
 header {   
-    flex: 1000;
+    z-index: 100;
     position: fixed;
     width: 100%;
     display: flex;
@@ -101,7 +101,6 @@ li {
     text-decoration: none;
     padding: 10px;
     font-size: 22px;
-    font-weight: bolder;
     letter-spacing: 1.5px;
     list-style: none;
 
@@ -213,6 +212,7 @@ h1 {
 }
 
 .nick  {
+    flex: 2;
     font-size: 50px;
     animation: slideIn 3s ease infinite;
     animation-direction: alternate; 
@@ -331,32 +331,53 @@ footer {
 
 .section3 {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1266px;
+    border: 1px solid #1c1c1c;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.infoLinguagens {
     color: #FFF;
-    margin-bottom: 20px;
-    width: 70%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    text-align: justify ;
     
 }
 
 .Linguagens {
+    justify-content: space-between;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px;
+    padding: 20px;
+    border: 1px solid #1c1c1c;
+    position: relative;
 }
 
 
 
-#clasDiv {
+.clasDiv {
     overflow: hidden;
     padding: 20px;
     cursor: pointer;
     border: 2px solid #1c1c1c;
     font-size: 30px;
     color: #0a5c00;
+    margin: 20px;
 }
 
 
-#clasDiv:hover {
+.clasDiv:hover {
     border: 2px solid #0a5c00;
 }
