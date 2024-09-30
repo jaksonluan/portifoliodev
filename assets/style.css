@@ -381,3 +381,17 @@ footer {
 .clasDiv:hover {
     border: 2px solid #0a5c00;
 }
+
+
+.hidden {
+    opacity: 0;                         /* Esconde o elemento inicialmente */
+    transform: translateY(20px);       /* Move o elemento para baixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transições suaves */
+}
+  
+.visible {
+    opacity: 1;                         /* Exibe o elemento */
+    transform: translateY(0);          /* Move o elemento para a posição original */
+}
+  
+  

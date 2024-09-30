@@ -105,3 +105,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
         textDiv.textContent = 'Passe o mouse sobre a linguagem.';
     });
 });
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');  // Adiciona a classe 'visible' quando o elemento está visível
+      } else {
+        entry.target.classList.remove('visible'); // Remove a classe 'visible' quando o elemento não está mais visível
+      }
+    });
+  }, {
+    threshold: 0.8 // Inicia a animação quando 10% do elemento está visível
+  });
+  
+  // Observa todos os elementos com a classe 'hidden'
+  document.querySelectorAll('.hidden').forEach((element) => {
+    observer.observe(element);
+  });
+  
+  
