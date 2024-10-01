@@ -109,16 +109,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');  // Adiciona a classe 'visible' quando o elemento está visível
+        entry.target.classList.add('visible');  
       } else {
-        entry.target.classList.remove('visible'); // Remove a classe 'visible' quando o elemento não está mais visível
+        entry.target.classList.remove('visible'); 
       }
     });
   }, {
-    threshold: 0.8 // Inicia a animação quando 10% do elemento está visível
+    threshold: 0.8
   });
   
-  // Observa todos os elementos com a classe 'hidden'
   document.querySelectorAll('.hidden').forEach((element) => {
     observer.observe(element);
   });
